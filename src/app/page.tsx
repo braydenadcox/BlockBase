@@ -1,12 +1,12 @@
 "use client"
 import Navbar from '@/components/navbar';
+import HomeCarousel from '@/components/homeCarousel';
 
 export default function Home() {
   return (
-    <main className='h-[1500px]'>
+    <main className='h-[1500px] bg-white'>
       <Navbar />
-      <div className='h-[670px] bg-red-500'>
-      </div>
+      <HomeCarousel />
     </main>
   )
 };
