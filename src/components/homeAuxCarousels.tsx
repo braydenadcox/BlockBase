@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export const UpcomingCarousel = () => {
     return (
-        <div className='flex w-full h-[300px] bg-pink-500'>
+        <div className='flex w-full h-[275px] bg-pink-500'>
             <p>filler</p>
         </div>
     );
