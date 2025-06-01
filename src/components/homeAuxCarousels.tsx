@@ -3,8 +3,30 @@ import { useState } from "react";
 
 export const UpcomingCarousel = () => {
     return (
-        <div className='flex w-full h-[275px] bg-pink-500'>
-            <p>filler</p>
+        <div className='flex flex-col w-full h-[250px] gap-5 overflow-hidden'>
+            <div className='flex w-full h-[100px] items-center justify-center text-black'>
+                <h1 className='text-black text-4xl'>UPCOMING RELEASES FROM LEGO</h1>
+            </div>
+            <div className='overflow-hidden w-full px-8 h-[150px]'>
+                <div className='flex flex-nowrap w-max gap-8'>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                    <div className='bg-gray-300 rounded-xl w-[137px] h-[137px]'></div>
+                </div>
+            </div>
         </div>
     );
 };

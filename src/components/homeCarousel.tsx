@@ -25,8 +25,8 @@ const HomeCarousel = () => {
                     •
                 </p>
             </div>
-            <button onClick={lastFrame} className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 text-9xl p-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-300">❰</button>
-            <button onClick={nextFrame} className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 text-9xl p-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-300">❱</button>
+            <button onClick={lastFrame} className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 text-9xl p-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-300 opacity-75">❰</button>
+            <button onClick={nextFrame} className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 text-9xl p-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-300 opacity-75">❱</button>
             <div className='flex transition-transform duration-1200 ease-in-out w-[300%] h-full transform'
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
                 <div className='flex w-full h-full bg-yellow-500 shrink-0'> {/*Slide 0*/}
