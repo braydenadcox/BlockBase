@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link';
 import { useState } from 'react';
+import Dropdown from './dropdown';
 
 const Navbar = () => {
     const [ openSearch, setOpenSearch ] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
                 ) : (
                     <button className='text-2xl' onClick={() => setOpenSearch(true)}>🔍︎</button>
                 )}
-                <Link href='/categories'>CATEGORIES</Link>
+                <Dropdown />
                 <a className='text-2xl text-white' href='saved.tsx'>★</a>
                 <a className='text-2xl text-white' href='signup.tsx'>👤</a>
             </div>
