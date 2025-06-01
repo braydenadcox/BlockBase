@@ -3,13 +3,13 @@ import { useState } from "react";
 
 export const UpcomingCarousel = () => {
     return (
-        <div>
+        <div className='flex w-full h-[300px] bg-pink-500'>
             <p>filler</p>
         </div>
     );
 };
 
-export const PopularCarousel = () => {
+export const PopularDiv = () => {
     return (
         <div className='flex w-full h-[450px] justify-evenly py-8 px-4'>
             <div className="flex-1 mx-4 bg-red-500"></div>
