@@ -9,6 +9,7 @@ export default function Home() {
       <Navbar />
       <HomeCarousel />
       <PopularCarousel />
+      <UpcomingCarousel />
     </main>
   )
 };
