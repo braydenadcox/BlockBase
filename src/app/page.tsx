@@ -1,8 +1,11 @@
-"use client"
 import Navbar from '@/components/navbar';
 import HomeCarousel from '@/components/homeCarousel';
 import { UpcomingCarousel, PopularDiv } from '@/components/homeAuxCarousels';
 import Footer from '@/components/footer';
+
+export const metadata = {
+  title: 'BLOCKBASE – LEGO Affiliate Store',
+};
 
 export default function Home() {
   return (

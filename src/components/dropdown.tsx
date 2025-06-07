@@ -4,13 +4,12 @@ const Dropdown = () => {
     return (
         <div className='relative group'>
             <Link className='group-hover:bg-yellow-400 transition-colors duration-200' href='/categories'>CATEGORIES</Link>
-            <div className='absolute hidden group-hover:block bg-white text-black rounded mt-2 p-2 z-50 text-md'>
-                <p className=''>CITY</p>
-                <p className=''>STAR WARS</p>
-                <p className=''>CREATOR</p>
-                <p className=''>NINJAGO</p>
-                <p className=''>ARCHITECTURE</p>
-                <p className=''>HARRY POTTER</p>
+            <div className='flex flex-col absolute hidden group-hover:block bg-white text-black rounded mt-2 p-2 z-50 text-sm duration-500'>
+                <Link className='flex' href='/shop'>STAR WARS</Link>
+                <Link className='flex' href='/shop'>CITY</Link>
+                <Link className='flex' href='/shop'>CREATOR</Link>
+                <Link className='flex' href='/shop'>ARCHITECTURE</Link>
+                <Link className='flex' href='/shop'>HARRY POTTER</Link>
             </div>
         </div>
     );
