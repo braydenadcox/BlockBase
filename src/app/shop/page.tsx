@@ -6,11 +6,11 @@ import { LegoSets } from '@/data/legosets';
 
 export default function Shop() {
   return (
-    <div className="flex flex-col min-h-screen h-[2000px] bg-white">
+    <div className="flex flex-col min-h-screen h-[800px] bg-white">
       <Navbar />
       <main className="flex flex-grow">
         <Filter />
-        <Catalog />
+        <Catalog tag='placeholder' />
       </main>
       <Footer />
     </div>
