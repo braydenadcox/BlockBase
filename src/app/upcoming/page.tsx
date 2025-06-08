@@ -1,6 +1,8 @@
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import Filter from '@/components/filter';
+import Catalog from '@/components/SetCatalog';
+import { LegoSets } from '@/data/legosets';
 
 export default function Upcoming() {
   return (
@@ -8,8 +10,7 @@ export default function Upcoming() {
       <Navbar />
       <main className="flex flex-grow">
         <Filter />
-        <div className='flex flex-grow bg-blue-500'>
-        </div>
+        <Catalog />
       </main>
       <Footer />
     </div>
