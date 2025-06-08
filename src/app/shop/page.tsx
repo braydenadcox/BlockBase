@@ -6,9 +6,9 @@ import { LegoSets } from '@/data/legosets';
 
 export default function Shop() {
   return (
-    <div className="flex flex-col min-h-screen h-[800px] bg-white">
+    <div className="flex flex-col h-screen bg-white">
       <Navbar />
-      <main className="flex flex-grow">
+      <main className="flex flex-grow overflow-hidden">
         <Filter />
         <Catalog tag='placeholder' />
       </main>
