@@ -4,6 +4,10 @@ import Filter from '@/components/filter';
 import Catalog from '@/components/SetCatalog';
 import { LegoSets } from '@/data/legosets';
 
+export const metadata = {
+  title: 'Popular LEGO Sets',
+};
+
 export default function Popular() {
   return (
     <div className="flex flex-col h-screen bg-white">

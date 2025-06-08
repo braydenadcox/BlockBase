@@ -3,6 +3,10 @@ import Footer from '@/components/footer';
 import Filter from '@/components/filter';
 import { LegoSets } from '@/data/legosets';
 
+export const metadata = {
+  title: 'Categories',
+};
+
 export default function Categories() {
   return (
     <div className="flex flex-col min-h-screen h-[700px] bg-white">

@@ -11,7 +11,7 @@ const SetCatalog = ({ tag }: CatalogProps) => {
         {LegoSets.map((legoSet) => {
           if (legoSet.tags.includes(tag)) {
             return (
-              <div key={legoSet.id} className="p-4 bg-white shadow-md rounded">
+              <div key={legoSet.id} className="p-4 bg-white shadow-md rounded hover:bg-gray-200 duration-400">
                 <a className="text-black font-bold text-lg" href={legoSet.link} target="_blank">
                   {legoSet.name}
                 </a>

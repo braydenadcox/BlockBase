@@ -4,6 +4,10 @@ import Filter from '@/components/filter';
 import Catalog from '@/components/SetCatalog';
 import { LegoSets } from '@/data/legosets';
 
+export const metadata = {
+  title: 'Shop the Catalog',
+};
+
 export default function Shop() {
   return (
     <div className="flex flex-col h-screen bg-white">

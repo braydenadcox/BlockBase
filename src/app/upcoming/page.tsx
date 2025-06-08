@@ -4,6 +4,10 @@ import Filter from '@/components/filter';
 import Catalog from '@/components/SetCatalog';
 import { LegoSets } from '@/data/legosets';
 
+export const metadata = {
+  title: 'Upcoming LEGO Sets',
+};
+
 export default function Upcoming() {
   return (
     <div className="flex flex-col min-h-screen h-[800px] bg-white">
