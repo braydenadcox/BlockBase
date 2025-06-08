@@ -1,12 +1,38 @@
 // All lego set information, data and everything else go HERE
 
+interface LegoSet {
+    id: string,
+    name: string,
+    category: string,
+    tags: string[],
+    price: string,
+    link: string
+}
+
 export const LegoSets: LegoSet[] = [
     {
         id: '75192',
         name: 'Millenium Falcon',
         category: 'Star Wars',
-        tags: 'new',
+        tags: ['popular'],
         price: '$849.99',
-        link: 'Link goes here'
+        link: 'https://www.lego.com/en-us/product/millennium-falcon-75192'
+    },
+    {
+        id: '21061',
+        name: 'Notre-Dame de Paris',
+        category: 'Architecture',
+        tags: ['popular'],
+        price: '$229.99',
+        link: 'https://www.lego.com/en-us/product/notre-dame-de-paris-21061'
+
+    },
+    {
+        id: '75639',
+        name: 'The Going Merry Pirate Ship',
+        category: 'One Piece',
+        tags: ['popular', 'new'],
+        price: '$139.99',
+        link: 'https://www.lego.com/en-us/product/the-going-merry-pirate-ship-75639'
     }
 ]

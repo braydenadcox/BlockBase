@@ -2,6 +2,7 @@ import Navbar from '@/components/navbar';
 import HomeCarousel from '@/components/homeCarousel';
 import { UpcomingCarousel, PopularDiv } from '@/components/homeAuxCarousels';
 import Footer from '@/components/footer';
+import { LegoSets } from '@/data/legosets';
 
 export const metadata = {
   title: 'BLOCKBASE – LEGO Affiliate Store',

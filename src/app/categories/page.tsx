@@ -1,6 +1,7 @@
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import Filter from '@/components/filter';
+import { LegoSets } from '@/data/legosets';
 
 export default function Categories() {
   return (
