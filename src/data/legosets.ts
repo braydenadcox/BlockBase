@@ -25,5 +25,9 @@ export const LegoSets: LegoSet[] = [
 
     {
         id: '10352', name: 'The Simpsons: Krusty Burger', category: 'Icons', tags: ['new'], price: '$209.99', link: 'https://www.lego.com/en-us/product/the-simpsons-krusty-burger-10352'
+    },
+
+    {
+        id: '21276', name: 'The Creeper™', category: 'Minecraft', tags: [''], price: '$39.99', link: 'https://www.lego.com/en-us/product/the-creeper-21276'
     }
 ]

@@ -1,11 +1,7 @@
+'use client';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
-import Filter from '@/components/filter';
-import { LegoSets } from '@/data/legosets';
-
-export const metadata = {
-  title: 'Categories',
-};
+import Link from 'next/link';
 
 export default function Categories() {
   return (
@@ -15,14 +11,14 @@ export default function Categories() {
         <div className='flex text-black w-full h-[110px] text-5xl font-bold justify-center items-center'>
           <h1>FIND YOUR CATEGORY - LOCATE YOUR SET</h1>
         </div>
-        <div className='flex w-full h-[490px]'>
-          <div className='flex-1 bg-red-500'>STAR WARS</div>
-          <div className='flex-1 bg-orange-500'>ARCHITECTURE</div>
-          <div className='flex-1 bg-yellow-500'>HARRY POTTER</div>
-          <div className='flex-1 bg-green-500'>CITY</div>
-          <div className='flex-1 bg-blue-500'>18+</div>
-          <div className='flex-1 bg-purple-500'>MINECRAFT</div>
-          <div className='flex-1 bg-pink-500'>NINJAGO</div>
+        <div className='flex w-full h-[490px] align-center justify-center'>
+          <Link className='flex-1 bg-red-500' href='/shop?group=Star Wars'>STAR WARS</Link>
+          <Link className='flex-1 bg-orange-500' href='/shop'>ARCHITECTURE</Link>
+          <Link className='flex-1 bg-yellow-500' href='/shop'>HARRY POTTER</Link>
+          <Link className='flex-1 bg-green-500' href='/shop'>CITY</Link>
+          <Link className='flex-1 bg-blue-500' href='/shop'>18+</Link>
+          <Link className='flex-1 bg-purple-500' href='/shop?group=Minecraft'>MINECRAFT</Link>
+          <Link className='flex-1 bg-pink-500' href='/shop'>NINJAGO</Link>
         </div>
       </main>
       <Footer />
