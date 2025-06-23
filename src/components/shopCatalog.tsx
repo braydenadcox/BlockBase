@@ -4,7 +4,7 @@ interface CatalogProps {
   group: string;
 }
 
-const SetCatalog = ({ group }: CatalogProps) => {
+const ShopCatalog = ({ group }: CatalogProps) => {
   return (
     <div className='h-full overflow-y-scroll w-full'>
       <div className='grid grid-cols-3 gap-5 p-4 text-black'>
@@ -25,4 +25,4 @@ const SetCatalog = ({ group }: CatalogProps) => {
   );
 };
 
-export default SetCatalog;
+export default ShopCatalog;
