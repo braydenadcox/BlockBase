@@ -2,7 +2,6 @@ import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import Filter from '@/components/filter';
 import Catalog from '@/components/SetCatalog';
-import { LegoSets } from '@/data/legosets';
 
 export const metadata = {
   title: 'Popular LEGO Sets',
