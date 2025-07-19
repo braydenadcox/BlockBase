@@ -4,7 +4,7 @@ import fs from 'fs';
 
 const TARGET_URL = 'https://www.lego.com/en-us/categories/architecture';
 
-async function scrapeLegoFromJSONLD() {
+async function GrabSets() {
     try {
         const { data: html } = await axios.get(TARGET_URL);
         const $ = cheerio.load(html);
@@ -32,18 +32,18 @@ async function scrapeLegoFromJSONLD() {
                 name: item.name,
                 category: 'Architecture',
                 tags: ['popular'],
-                price: '', // You can fill this later
+                price: '', 
                 link: item.url,
-                image: '', // Optional to fill later
+                image: '', 
             };
         });
 
         const output = `export const legoSets = ${JSON.stringify(sets, null, 4)};\n`;
         fs.writeFileSync('legosets.ts', output);
-        console.log(`✅ Saved ${sets.length} sets to legosets.ts`);
+        console.log(`Saved ${sets.length} sets to legosets.ts`);
     } catch (error) {
-        console.error('❌ Error scraping LEGO JSON-LD:', error.message);
+        console.error('Error scraping LEGO JSON-LD:', error.message);
     }
 }
 
-scrapeLegoFromJSONLD();
+GrabSets();
