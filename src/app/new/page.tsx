@@ -2,6 +2,7 @@ import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import Filter from '@/components/filter';
 import Catalog from '@/components/SetCatalog';
+
 export const metadata = {
   title: 'New LEGO Sets',
 };
